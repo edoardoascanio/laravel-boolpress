@@ -30,8 +30,10 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    <img src="{{ asset('img/Boolpress-logo.png') }}"> 
+                <div class="logo">
+                    <img src="{{ asset('img/Boolpress-logo.png') }}">
+                </div>
+                <div class="title m-b-md"> 
                     Welcome to Boolpress
                 </div>
             </div>

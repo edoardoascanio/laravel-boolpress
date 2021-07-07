@@ -31,6 +31,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
+                    <img src="{{ asset('img/Boolpress-logo.png') }}"> 
                     Welcome to Boolpress
                 </div>
             </div>

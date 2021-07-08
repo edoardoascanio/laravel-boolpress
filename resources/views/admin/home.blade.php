@@ -9,14 +9,21 @@
 
                 <div class="card-body">
                     @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
+                    <div class="alert alert-success" role="alert">
+                        {{ session('status') }}
+                    </div>
                     @endif
 
                     {{ __('Benvenuto Admin '. Auth::user()->name .' !') }}
                 </div>
             </div>
+
+            <div class="text-center">
+                <a href="{{ route('posts.index')}}">
+                    <h4>Vai ai Posts privati</h4>
+                </a>
+            </div>
+
         </div>
     </div>
 </div>

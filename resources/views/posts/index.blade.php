@@ -14,10 +14,10 @@
                 <div class="card-body">
                     {{ __('id') }} {{ __('title') }}
 
-                    <a href="{{route('posts.show', $posts)}}">Mostra Post</a>
                     <a href="{{route ('posts.edit', $posts)}}">Modifica</a>
-
-                    @include('layouts.deleteBtn',$posts)
+                    <a href="{{route('posts.show', $posts)}}">Mostra Post</a>
+                
+                    @include('layouts.deleteBtn', $posts)
                 </div>
             </div>
         </div>

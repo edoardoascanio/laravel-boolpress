@@ -29,7 +29,6 @@ class PostController extends Controller
         $newPost = new Post();
         $newPost->title = $newPostData["title"];
         $newPost->post = $newPostData["post"];
-        $newPost->created_data = $newPostData["created_data"];
         $newPost->save();
 
         return redirect()->route('posts.show', $newPost->id);

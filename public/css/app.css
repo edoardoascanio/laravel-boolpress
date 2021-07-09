@@ -11007,7 +11007,7 @@ body img {
 
 .card a {
   float: right;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 .create-container label,
@@ -11023,5 +11023,9 @@ body img {
 .create-container a,
 .edit-container a {
   float: right;
+}
+
+i {
+  margin: 5px;
 }
 

@@ -10,7 +10,7 @@
             <label for="title">Titolo</label>
             <input type="text" name="title" id="title" value="{{ $post->title}}">
 
-            <a href="{{ route('posts.index')}}"><strong>Torna ai Posts</strong></a>
+            <a href="{{ route('posts.index')}}"><strong>Torna ai Posts <i class="fa fa-undo"></i></strong></a>
 
             <div class="label">
               <label for="description">Modifica Post</label>

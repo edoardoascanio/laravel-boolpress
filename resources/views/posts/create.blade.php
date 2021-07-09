@@ -13,11 +13,11 @@
             <a href="{{ route('posts.index')}}"><strong>Torna ai Posts <i class="fa fa-undo"></i></strong></a>
 
             <div class="label">
-                <label for="description">Scrivi Post</label>
+                <label for="post">Scrivi Post</label>
             </div>
 
             <div class="post">    
-                <textarea name="description" id="description" cols="60" rows="10" placeholder="Inserisci testo"></textarea>
+                <textarea name="post" id="post" cols="60" rows="10" placeholder="Inserisci testo"></textarea>
             </div>
 
             <input class="btn btn-primary "type="submit" value="Invia">

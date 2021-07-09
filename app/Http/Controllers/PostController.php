@@ -10,7 +10,7 @@ class PostController extends Controller
 {
     public function index() {
         $data = [
-            'posts' => Post::all()
+            'posts' => Post::orderBy('id','DESC')->get()
         ];
         return view('posts.index', $data);
     }
@@ -22,12 +22,13 @@ class PostController extends Controller
     }
 
 
-        public function store(Request $request)
+    public function store(Request $request)
     {
         $newPostData = $request->all();
+
         $newPost = new Post();
-        $newPost->title = $newPostData["title "];
-        $newPost->description = $newPostData["description"];
+        $newPost->title = $newPostData["title"];
+        $newPost->post = $newPostData["post"];
         $newPost->created_data = $newPostData["created_data"];
         $newPost->save();
 

@@ -4,17 +4,15 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
+            
             <div class="card">
                 <div class="card-header">
-                    <strong>{{ __('title') }}</strong>
+                    <strong>{{($post->title)}}</strong>
+                    <a href="{{ route('posts.index')}}"><strong>Torna ai Posts</strong></a>
                 </div>
                 <div class="card-body">
-                    {{$posts->post}}
+                    {{$post->post}}
                 </div>
-            </div>
-
-            <div class="link">
-                <a href="{{ route('posts.index')}}"><strong>Torna ai Posts</strong></a>
             </div>
         </div>
     </div>

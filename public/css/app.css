@@ -11010,7 +11010,18 @@ body img {
   margin-right: 20px;
 }
 
-a strong {
-  margin-top: 40px;
+.create-container label,
+.edit-container label {
+  margin-top: 30px;
+}
+
+.create-container .btn,
+.edit-container .btn {
+  padding: 5px 20px;
+}
+
+.create-container a,
+.edit-container a {
+  float: right;
 }
 

@@ -5,9 +5,20 @@
     }
 }
 
-a{
-    strong{
-        margin-top: 40px;
+.create-container, .edit-container{
+    label{
+        margin-top:30px
+    }
+
+    .btn{
+        padding: 5px 20px;
+    }
+
+    a{
+        float: right;
     }
 }
+
+
+
 

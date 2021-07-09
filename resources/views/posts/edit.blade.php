@@ -2,22 +2,21 @@
 
 @section('content')
 
-<div class="container create-container">
+<div class="container edit-container">
     <div class="row justify-content-center">
-        <form action="{{ route('posts.store')}} " method="post">
+        <form action="" method="post">
          @csrf
 
             <label for="title">Titolo</label>
-            <input type="text" name="title" id="title" placeholder="Inserisci titolo">
+            <input type="text" name="title" id="title" value="{{ $post->title}}">
 
             <a href="{{ route('posts.index')}}"><strong>Torna ai Posts</strong></a>
 
             <div class="label">
-                <label for="description">Scrivi Post</label>
+              <label for="description">Modifica Post</label>
             </div>
-
             <div class="post">    
-                <textarea name="description" id="description" cols="60" rows="10" placeholder="Inserisci testo"></textarea>
+                <textarea name="description" id="description" cols="60" rows="10" value="{{$post->post}}"></textarea>
             </div>
 
             <input class="btn btn-primary "type="submit" value="Invia">

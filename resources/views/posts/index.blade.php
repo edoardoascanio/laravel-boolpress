@@ -11,14 +11,17 @@
                     <strong>Posts pubblici</strong>
                     <a href="{{ route('posts.create')}}">Crea Post</a>
                 </div>
-                <div class="card-body">
-                    {{ __('id') }} {{ __('title') }}
 
-                    <a href="{{route ('posts.edit', $posts)}}">Modifica</a>
-                    <a href="{{route('posts.show', $posts)}}">Mostra Post</a>
-                
-                    @include('layouts.deleteBtn', $posts)
-                </div>
+                @foreach($posts as $post)
+                    <div class="card-body">
+                        {{$post->id}} {{$post->title}}
+
+                        <a href="{{route ('posts.edit', $post)}}">Modifica</a>
+                        <a href="{{route('posts.show', $post)}}">Mostra Post</a> 
+
+                        @include('layouts.deleteBtn', $posts)
+                    </div>
+                @endforeach
             </div>
         </div>
     </div>

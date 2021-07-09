@@ -35,26 +35,32 @@ class PostController extends Controller
     }
 
 
-    public function show(Post $slug) {
-        $post = Post::where('slug', $slug)->first();
-
-        if(!$post){
-            abort(404);
-        }
-
-        $data = ['post' => $post];
-
-        return view('posts.show', $data);
+    public function show(Post $post)
+    {
+        return view("posts.show",[
+            "post" => $post
+        ]);
     }
 
 
     public function edit($id){
         $post = Post::findOrFail($id);
 
-        return view('posts.edit',[
+        return view('posts.edit', [
             'post' => $post
         ]);    
     }
+
+
+    public function update(Request $request, $id){
+        $post = Post::find($id);
+        $formData = $request->all();
+
+        $post->update($formData);
+
+        return redirect()->route("post.show", $post->$id);
+    }
+
 
     public function destroy($id){
         $post = Post::findOrFail($id);

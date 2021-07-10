@@ -36,10 +36,6 @@
                 <div class="title m-b-md"> 
                     Welcome to Boolpress
                 </div>
-
-                <div class="link">
-                <a href="{{ route('posts.index')}}"><h3>Vai ai Posts</h3></a>
-                </div>
             </div>
         </div>
     </body>

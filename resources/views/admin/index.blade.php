@@ -22,7 +22,6 @@
                 </div>
 
                 @foreach($posts as $post)
-                
                 <div class="card-body">
 
                     <i class="fa fa-caret-right"></i>{{$post->id}} - {{$post->title}}
@@ -37,9 +36,6 @@
                 </div>
                 @endforeach
             </div>
-
-
-
         </div>
     </div>
 </div>

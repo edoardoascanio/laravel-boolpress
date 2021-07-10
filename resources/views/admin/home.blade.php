@@ -18,12 +18,13 @@
                 </div>
             </div>
 
-            <div class="text-center">
-                <a href="{{ route('posts.index')}}">
-                    <h4>Vai ai Posts privati</h4>
-                </a>
+            <div class="link-post">
+                <div class="text-center">
+                    <a href="{{ route('posts.index')}}">
+                        <h4>Vai ai Posts</h4>
+                    </a>
+                </div>
             </div>
-
         </div>
     </div>
 </div>

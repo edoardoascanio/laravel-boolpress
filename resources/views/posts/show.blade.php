@@ -12,7 +12,7 @@
 
                     <a href="{{ route('posts.index')}}"><strong>Torna ai Posts <i class="fa fa-undo"></i></strong></a>
 
-                     @include('layouts.deleteBtn', $post)
+                    @include('layouts.deleteBtn', $post)
 
                     <a href="{{route ('posts.edit', $post)}}"> <i class="fa fa-pencil"></i></a>
                 </div>

@@ -18,6 +18,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/public/index', function () {
+     return view('public/index');
+})->name('public.index');
+
 Route::get('/posts', 'PostController@index')->name('posts.index');
 
 Route::post('/posts', 'PostController@store')->name('posts.store');
@@ -44,6 +48,7 @@ Route::prefix('admin')
      ->group(function (){
           Route::get('/','HomeController@index')
           ->name('index');
+
           Route::get('/posts', 'PostController@index')->name('posts.index');
      });
 

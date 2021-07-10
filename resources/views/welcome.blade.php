@@ -30,12 +30,22 @@
             @endif
 
             <div class="content">
+
                 <div class="logo">
                     <img src="{{ asset('img/Boolpress-logo.png') }}">
                 </div>
                 <div class="title m-b-md"> 
                     Welcome to Boolpress
                 </div>
+
+                <div class="link-post">
+                    <div class="text-center">
+                        <a href="{{ route('public.index')}}">
+                            <h4>Vai ai Posts</h4>
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </body>

@@ -14,15 +14,17 @@
 
                 @foreach($posts as $post)
                     <div class="card-body">
-                        {{$post->id}} {{$post->title}}
+                        
+                       <i class="fa fa-caret-right"></i>{{$post->id}} - {{$post->title}}
+                        
 
-                         <a href=""> <i class="fa fa-trash"></i></a>
+                        @include('layouts.deleteBtn', $post)
 
                         <a href="{{route ('posts.edit', $post)}}"> <i class="fa fa-pencil"></i></a>
 
                         <a href="{{route('posts.show', $post)}}"><i class="fa fa-chevron-down"></i>Mostra Post</a>
 
-                        @include('layouts.deleteBtn', $posts)
+                        
                     </div>
                 @endforeach
             </div>

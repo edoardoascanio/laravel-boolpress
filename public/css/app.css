@@ -11010,6 +11010,10 @@ body img {
   margin-right: 30px;
 }
 
+.delete_form {
+  float: right;
+}
+
 .create-container label,
 .edit-container label {
   margin-top: 30px;

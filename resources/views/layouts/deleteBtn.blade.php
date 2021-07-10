@@ -1,8 +1,10 @@
-{{-- <form action="{{ route ('posts.destroy', $posts) }}" method="post" class="delete_form">
+<form action="{{ route ('posts.destroy', $post) }}" method="post" class="delete_form">
 
     @csrf
     @method('DELETE')
 
-    <input type="submit" value="Cancella">
-    
-</form>     --}}
+    <div class="delete">
+        <a href=""> <i class="fa fa-trash"></i></a>
+    </div>
+
+</form>
